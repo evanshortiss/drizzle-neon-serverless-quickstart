@@ -1,0 +1,28 @@
+{
+  "name": "drizzle-neon-serverless-quickstart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config src/index.ts",
+    "drizzle:generate": "drizzle-kit generate:pg",
+    "drizzle:push": "drizzle-kit push:pg",
+    "seed": "ts-node -r dotenv/config seed.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@neondatabase/serverless": "^0.7.2",
+    "drizzle-orm": "^0.29.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.7",
+    "dotenv": "^16.3.1",
+    "drizzle-kit": "^0.20.13",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
